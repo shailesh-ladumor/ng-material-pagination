@@ -19,13 +19,14 @@ with easy to use functions, including,
     - Change per page (Display number of records per page)
     
     ##### Check here how looks like! [Demo](https://youtu.be/QAox97SY3GQ) 
-     Simple Component View
+    
+     ##### Simple Component View
      ![alt text](https://i.ibb.co/bRBTknG/01-priview1.jpg")
      
-     Preview with Jump to page
+     ##### Preview with Jump to page
      ![alt text](https://i.ibb.co/yRYY7MT/02-priview2.jpg")
      
-     Preview with change per page
+     ##### Preview with change per page
      ![alt text](https://i.ibb.co/ssLbqb5/03-priview3.jpg")
 ## How to Integrate
 - I tried my best to make the integration of the component as easy as possible.
