@@ -1,0 +1,32 @@
+<ul class="list-unstyled list-inline pull-right mt-2" *ngIf="pagination.totalCount > defaultPerPage">
+	<li class="list-inline-item" *ngIf="pagination.lastPage !== 1">
+		<button mat-icon-button color="primary" [disabled]="pagination.currentPage === 1"
+				(click)="prevPage()" id="btnNpPrev">
+			<mat-icon class="material-icons">navigate_before</mat-icon>
+		</button>
+	</li>
+	<li class="list-inline-item" *ngIf="pagination.lastPage !== 1">
+		<mat-menu #appMenu="matMenu" yPosition="above" id="pagination-menu">
+			<button mat-menu-item *ngFor="let page of range()" (click)="jumpTo(page)">{{page}}</button>
+		</mat-menu>
+		<button mat-icon-button [matMenuTriggerFor]="appMenu" class="btn-pagination"
+				[disabled]="pagination.lastPage === 1">
+			<span>{{pagination.currentPage}}</span>
+		</button>
+	</li>
+	<li class="list-inline-item" *ngIf="pagination.lastPage !== 1">
+		<button mat-icon-button color="primary" [disabled]="pagination.lastPage === pagination.currentPage"
+				(click)="nextPage()" id="btnNpNext">
+			<mat-icon class="material-icons">navigate_next</mat-icon>
+		</button>
+	</li>
+	<li class="list-inline-item">
+		<mat-form-field class="pt-2">
+			<mat-select placeholder="Per Page"
+						[(ngModel)]="pagination.pageSize"
+						(selectionChange)="onPerPageChange()" id="selPerPageChange">
+				<mat-option *ngFor="let perPage of perPageCounts" [value]="perPage">{{perPage}}</mat-option>
+			</mat-select>
+		</mat-form-field>
+	</li>
+</ul>

@@ -1,0 +1,32 @@
+.md2-menu-content {
+	min-width: 0 !important;
+	max-height: 300px !important;
+	margin-top: 40px;
+	overflow-y: auto;
+}
+
+.mat-menu-panel {
+	min-width: 0 !important;
+	max-height: 150px !important;
+	width: 60px !important;
+}
+
+.cdk-overlay-pane {
+	min-width: 0 !important;
+}
+
+.mat-form-field-infix {
+	width: 50px !important;
+}
+
+.mat-menu-item {
+	line-height: 35px !important;
+	height: 35px !important;
+}
+
+.btn-pagination {
+	background: rgba(0, 0, 0, 0.14);
+	width: 30px;
+	height: 30px;
+	line-height: 1.5;
+}
